@@ -34,6 +34,14 @@ En esta versión 3 intento mejorar el código sin llegar a implementar el "Featu
 Otro asunto menor pero molesto era el tema de los espacios entre los mensajes y el orden de estos.Pongo un ejemplo. En el caso de  105 la clase FizzCalculator respondia 'popbuzzfizz' en lugar de 'fizz buzz pop'.Con esta versión queda corregido el asunto. Lo he hecho pidiendo a las subclases que se ordenen por su #myNumber antes de consultarlas.
 El test debió cambiar para aceptar las nuevas soluciones
 
+##Quinta versión
+Me pongo con el “Feature 3”. Este me obliga a un interesante giro.Qué sucede si se desea una gran flexibilidad en cuanto a números como divisores y palabras de respuesta.Quiero decir que el cliente pueda modificar o crear sus propias reglas.Ya no podemos usar el sistema de clases sino crear una clase genérica para ello.Esto nos obliga lógicamente a cambiar a FizzCalculator que ya no buscará entre sus subclases sino que instanciará una genérica -tantas como necesite el cliente-y le dará sus atributos asignados por el cliente.En esta primera versión mantengo los números 3,5 y 7 para no modificar los test.Creo un FBCalculatorX que será genérico pero aun no borro las otras.
+
+
+##Sexta versión
+Borro las clase 3,5 y 7 porque ya no las necesito.El test ahora debe incluir un previo que cargue las reglas del cliente.Esto lo hago con un diccionario. El resto del código es autoexplicativo.
+Fin de la kata.Esta kata me ha parecido muy interesante y divertida.
+
 
 
 
